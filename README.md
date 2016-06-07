@@ -38,6 +38,7 @@ Esse é um projeto Web Java (war). A
 qui estará o código que temos que escrever para o servidor (DB e segurança).
 
 
+#
 No fim temos que distribuir um arquivo ".war" que será criado quando juntamos todos os arquivos.
 Esse arquivo é produzido pelo Netbeans pelo projeto "JavaModelo_Test". O Ant fará isso pra gente.
 
