@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Latin</title>
+    
+    <style>@@cssCritico</style>
+    
+  </head>
+  <body ng-app="Module" ng-strict-di="true">
+    
+    
+    <div class="faixaSuperior">
+      <div class="logo"></div>
+      <div class="userInfo"></div>
+    </div>
+      
+    <div class="faixaCentral">
+      
+      <div class="menu" ng-controller="Menu">
+        <a ui-sref="clientes">Clientes</a>
+        <a ui-sref="produtos">Produtos</a>
+        <div class="linha"></div>
+        <a ui-sref="normas">Normas</a>
+        <div class="linha"></div>
+        <a ui-sref="ordemServicos">Ordem de serviços</a>
+        <a ui-sref="experimentos">Experimentos</a>
+        <div class="linha"></div>
+      </div>
+      
+      <div ui-view="conteudo"></div>
+      
+    </div>
+    
+    <!-- ================================================ -->
+    <div id="paginas" style="display:none;">
+      @@htmlPaginas
+    </div>
+    <script>@@jsCritico</script>
+    <link href="@@cssNormal" rel="stylesheet" type="text/css"/>
+    <script src="@@jsNormal"></script>
+    
+  </body>
+</html>
